@@ -3,10 +3,10 @@ import googleapiclient.discovery
 import google.auth
 
 # ①Google APIの準備をする
-SCOPES = ['https://www.googleapis.com/auth/calendar']
-calendar_id = '4e1009a2ca388a1542d035d10f8b45ed88ddc19784dea4628483e0b816141396@group.calendar.google.com'
+SCOPES = ['API_SCOPE']
+calendar_id = 'calendarID'
 # Googleの認証情報をファイルから読み込む
-gapi_creds = google.auth.load_credentials_from_file('scheduleapi-366608-32e9631d3f92.json', SCOPES)[0]
+gapi_creds = google.auth.load_credentials_from_file('schedule_json', SCOPES)[0]
 # APIと対話するためのResourceオブジェクトを構築する
 service = googleapiclient.discovery.build('calendar', 'v3', credentials=gapi_creds)
 

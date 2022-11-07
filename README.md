@@ -1,1 +1,2 @@
 # LineBot2schedule
+LineBotとHerokuを利用して，Lineチャットにスケジュール画像を入力すると自動でGoogleカレンダーに反映する

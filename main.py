@@ -14,3 +14,5 @@ if __name__ == '__main__':
     # 1:休み 2:通し 3:短縮 4:通常
     events = schedule2google.dataloader(day, dt_now.year, dt_now.month)
 
+
+
